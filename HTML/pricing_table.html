@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    .card p.price {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .card button {
+      background: green;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease; /* smooth effect */
+    }
+
+    .card button:hover {
+      background: #344fa1;
+    }
+
+    /* Highlight Standard plan */
+    .standard {
+      background-color: #e6f0ff;
+      border: 2px solid darkblue;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="pricing-container">
+    <div class="card">
+      <h2>Basic</h2>
+      <p class="price">₹199/month</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card standard">
+      <h2>Standard</h2>
+      <p class="price">₹599/month</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="card">
+      <h2>Premium</h2>
+      <p class="price">1999/month</p>
+      <button>Buy Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
