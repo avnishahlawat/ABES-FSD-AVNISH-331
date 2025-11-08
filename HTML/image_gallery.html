@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equal Size Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      max-width: 900px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; 
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="gallery">
+    <img src="https://www.nylabone.com/-/media/project/oneweb/nylabone/images/dog101/10-intelligent-dog-breeds/golden-retriever-tongue-out.jpg?h=430&w=710&hash=7FEB820D235A44B76B271060E03572C7" alt="Image 1">
+    <img src="https://previews.123rf.com/images/yommy8008/yommy80081610/yommy8008161000081/67376534-square-photo-with-head-detail-of-few-weeks-old-tabby-cat-kitten-has-blue-eyes-and-dark-nose-baby.jpg" alt="Image 2">
+    <img src="https://media.istockphoto.com/id/509486464/photo/arabian-horse-portrait-on-green-background-square-photo.jpg?s=612x612&w=0&k=20&c=iDMG4MR-rv5JdVzXUo5f9e6uszmrQ-3tEG7RdCIaKZo=" alt="Image 3">
+    <img src="https://t4.ftcdn.net/jpg/05/29/61/37/360_F_529613760_ZN7wI9c62MyPeFC8ioliQ2wrVohVuRey.jpg" alt="Image 4">
+    <img src="https://media.gettyimages.com/id/1943468630/photo/portrait-of-a-big-male-lion-south-africa.jpg?s=612x612&w=gi&k=20&c=8Wz0ZJphcDYq4JzavkN1yNv_zOuHw0y1mCQQIES25sw=" alt="Image 5">
+    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y293fGVufDB8fDB8fHww" alt="Image 6">
+  </div>
+
+</body>
+</html>
