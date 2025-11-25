@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tribute to Plants</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green-700:#1f6f3a;
+      --green-500:#2e8b57;
+      --soft:#f6fbf6;
+      --card-bg: rgba(255,255,255,0.95);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:"Roboto", Arial, sans-serif;
+      background: linear-gradient(180deg, #eef8ee 0%, #f8fff8 100%);
+      color:#153615;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:24px;
+    }
+    header.site{
+      max-width:1000px;
+      margin:0 auto 18px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:10px;
+      background-image: url('https://media.istockphoto.com/id/482571319/photo/young-plant.jpg?s=612x612&w=0&k=20&c=pAcpCzyBQoUcPth75gySdoxb4mOrEMFDt9HegFWkrr8=');
+      background-size:cover;
+      background-position:center;
+      flex:0 0 64px;
+      box-shadow:0 6px 18px rgba(31,111,58,0.08);
+    }
+    header h1{
+      margin:0;
+      font-family:"Merriweather", Georgia, serif;
+      font-size:1.6rem;
+      color:var(--green-700);
+    }
+    header p.lead{
+      margin:4px 0 0;
+      color:#2f5f3d;
+      font-size:0.95rem;
+    }
+    .hero{
+      max-width:1000px;
+      margin:18px auto;
+      border-radius:12px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:0;
+      background:var(--card-bg);
+      box-shadow:0 10px 30px rgba(31,111,58,0.06);
+    }
+    .hero .text{
+      padding:28px;
+    }
+    .tag{
+      display:inline-block;
+      background:var(--green-500);
+      color:white;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:700;
+      font-size:0.85rem;
+      margin-bottom:12px;
+    }
+    .hero h2{
+      margin:6px 0 12px;
+      font-family:"Merriweather", Georgia, serif;
+      color:var(--green-700);
+      font-size:1.4rem;
+    }
+    .hero p{ margin:0 0 12px; color:#274a2a; }
+    .hero .cta{
+      margin-top:14px;
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .btn{
+      background:var(--green-500);
+      color:#fff;
+      border:none;
+      padding:10px 14px;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:700;
+    }
+    .side{
+      background-image: url('https://media.istockphoto.com/id/498548086/photo/rays-of-sunlight-and-green-forest.jpg?s=612x612&w=0&k=20&c=9RwO17TuPHgCVlwQBPBVgSTrKx2aK_245-hgSWzKP7g=');
+      background-size:cover;
+      background-position:center;
+      min-height:240px;
+    }
+    main.content{
+      max-width:1000px;
+      margin:20px auto 60px;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+    }
+    article.card{
+      background:var(--card-bg);
+      padding:18px;
+      border-radius:10px;
+      box-shadow:0 8px 20px rgba(31,111,58,0.04);
+    }
+    article.card h3{
+      margin-top:0;
+      color:var(--green-700);
+      font-family:"Merriweather", Georgia, serif;
+    }
+    article.card p{ margin:0 0 12px; color:#2c5330; }
+    ul.features{
+      padding-left:18px;
+      margin:8px 0 12px;
+      color:#25482d;
+    }
+    aside.panel{
+      background:#fff;
+      padding:14px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(31,111,58,0.04);
+      height:max-content;
+    }
+    aside.panel h4{ margin:0 0 10px; color:var(--green-700); }
+    .fact{ font-size:0.95rem; color:#274a2a; margin-bottom:8px; }
+    footer.site{
+      max-width:1000px;
+      margin:40px auto 20px;
+      text-align:center;
+      color:#446a47;
+      font-size:0.95rem;
+    }
+    @media (max-width:920px){
+      .hero{ grid-template-columns: 1fr; }
+      main.content{ grid-template-columns: 1fr; }
+      .side{ min-height:200px; }
+    }
+    footer.site{
+  max-width:1000px;
+  margin:40px auto 20px;
+  text-align:center;
+  background:linear-gradient(90deg,#e9f6ea,#d9f0dc);
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(31,111,58,0.05);
+}
+.footer-content h4{
+  margin:0;
+  color:#1f6f3a;
+  font-family:"Merriweather", Georgia, serif;
+}
+.footer-content p{
+  margin:6px 0;
+  color:#2f4f2f;
+  font-size:0.95rem;
+}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="logo" aria-hidden="true"></div>
+    <div>
+      <h1>Tribute to Plants</h1>
+      <p class="lead">Honouring the quiet green allies that sustain life and calm the mind.</p>
+    </div>
+  </header>
+
+  <section class="hero" role="region" aria-label="Introduction">
+    <div class="text">
+      <span class="tag">Nature</span>
+      <h2>Why plants matter</h2>
+      <p>Plants make air breathable, provide food and shelter, and shape landscapes. They are the first step in every food chain and the backbone of healthy ecosystems.</p>
+      <p>Beyond utility, plants improve mental wellbeing: a single indoor plant can reduce stress and brighten a room. Respecting plants is respecting our future.</p>
+      <div class="cta">
+        <button class="btn" onclick="alert('Grow something today — water a seed or a pot!')">Grow a habit</button>
+        <button class="btn" style="background:#8fbf8f" onclick="alert('Share a photo of your plant with friends.')">Share</button>
+      </div>
+    </div>
+    <div class="side" role="img" aria-label="Green plants"></div>
+  </section>
+
+  <main class="content">
+    <article class="card">
+      <h3>Quick ways to care for plants</h3>
+      <p>Small consistent actions give the best results. Start with a resilient plant and learn its needs: light, water, soil and occasional feeding.</p>
+      <ul class="features">
+        <li>Place in bright, indirect light for most houseplants.</li>
+        <li>Allow soil to dry slightly between watering to avoid root rot.</li>
+        <li>Use well-draining soil and a pot with drainage holes.</li>
+        <li>Prune dead leaves and rotate plants for even growth.</li>
+      </ul>
+
+      <h3>Plants to begin with</h3>
+      <p>Succulents, spider plants and pothos are forgiving and great for beginners. They tolerate irregular care while teaching you the basics.</p>
+    </article>
+
+    <aside class="panel" aria-labelledby="panel-title">
+      <h4 id="panel-title">Did you know?</h4>
+      <div class="fact">A mature tree can absorb up to 48 pounds (about 22 kg) of CO₂ per year.</div>
+      <div class="fact">Houseplants can improve indoor humidity and reduce airborne dust.</div>
+      <div class="fact">More than 80% of the world’s plant species are still unknown to science.</div>
+    </aside>
+  </main>
+
+<footer class="site">
+  <div class="footer-content">
+    <h4> In Gratitude to Nature</h4>
+    <p>
+      Every leaf is a reminder that life thrives quietly when nurtured with care.  
+      Let’s grow a little kindness each day — for our planet and for ourselves.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
